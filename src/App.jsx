@@ -75,11 +75,11 @@ function HomeSection() {
     <section id="home" className="section hero-section">
       <div className="container hero-content">
         <div className="hero-text">
-          <h1>Fast, Reliable & Professional Plumbing Services</h1>
+          <h1>Professional Plumbing Services You Can Trust</h1>
           <p>
-            We provide trusted plumbing solutions for homes, offices, and
-            commercial properties. From emergency repairs to full installations,
-            our experienced team is ready to help.
+            Expert plumbing solutions for residential and commercial properties across London.
+            From emergency repairs to complete installations, our certified team delivers
+            quality workmanship with guaranteed results.
           </p>
           <a href="#contact" className="primary-btn">
             Book a Service
@@ -93,34 +93,34 @@ function HomeSection() {
 function ServicesSection() {
   const services = [
     {
-      title: "Emergency Plumbing",
+      title: "24/7 Emergency Plumbing",
       description:
-        "Quick response for urgent leaks, burst pipes, and blocked drains.",
+        "Round-the-clock response for urgent leaks, burst pipes, and blocked drains. We're here when you need us most.",
     },
     {
       title: "Pipe Installation & Repair",
       description:
-        "Professional pipe fitting, replacement, and maintenance services.",
+        "Expert pipe fitting, replacement, and maintenance services using high-quality materials and modern techniques.",
     },
     {
-      title: "Drain Cleaning",
+      title: "Drain Cleaning & Unblocking",
       description:
-        "Effective drain unclogging and cleaning for kitchens, bathrooms, and outdoor systems.",
+        "Professional drain unclogging and cleaning for kitchens, bathrooms, and outdoor drainage systems.",
     },
     {
       title: "Bathroom & Kitchen Plumbing",
       description:
-        "Installation and servicing of sinks, taps, toilets, showers, and more.",
+        "Complete installation and servicing of sinks, taps, toilets, showers, and all fixtures with precision.",
     },
     {
       title: "Water Heater Services",
       description:
-        "Repair, replacement, and installation of water heater systems.",
+        "Expert repair, replacement, and installation of all types of water heater systems for optimal performance.",
     },
     {
-      title: "Leak Detection",
+      title: "Leak Detection & Repair",
       description:
-        "Advanced inspection and repair for hidden leaks and water pressure issues.",
+        "Advanced inspection technology to locate hidden leaks and resolve water pressure issues efficiently.",
     },
   ];
 
@@ -156,17 +156,18 @@ function AboutSection() {
 
         <div className="about-content">
           <p>
-            At PlumbCare, our mission is to deliver safe, efficient, and
-            affordable plumbing services with excellent customer care. We take
-            pride in our workmanship and strive to solve every plumbing issue
-            with professionalism and honesty.
+            At PlumbCare, we are committed to delivering exceptional plumbing services
+            that exceed expectations. With over 15 years of experience serving London and
+            surrounding areas, we've built our reputation on quality workmanship, reliability,
+            and outstanding customer service.
           </p>
 
           <p>
-            Our team consists of skilled plumbers with experience in repairs,
-            maintenance, installations, and emergency callouts. We believe in
-            quality service, transparent pricing, and long-term customer
-            relationships.
+            Our team of fully licensed and insured plumbers specializes in residential and
+            commercial plumbing projects of all sizes. From routine maintenance to complex
+            installations and emergency repairs, we handle every job with precision and care.
+            We believe in transparent pricing, clear communication, and building lasting
+            relationships with our customers.
           </p>
         </div>
       </div>
