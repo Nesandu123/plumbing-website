@@ -219,17 +219,45 @@ a {
 .map-card,
 .form-card {
   background: #ffffff;
-  padding: 32px;
+  padding: 0;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   border: 1px solid #e5e7eb;
   transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(30, 64, 175, 0.15);
   border-color: #3b82f6;
+}
+
+.service-image {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover .service-image img {
+  transform: scale(1.08);
+}
+
+.service-content {
+  padding: 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card h3 {
@@ -242,23 +270,60 @@ a {
 .service-card p {
   color: #4b5563;
   line-height: 1.7;
+  flex: 1;
+}
+
+.map-card,
+.form-card {
+  padding: 32px;
+}
+
+.map-card:hover,
+.form-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(30, 64, 175, 0.15);
+  border-color: #3b82f6;
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.about-image {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(30, 64, 175, 0.15);
+  height: 400px;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.about-wrapper:hover .about-image img {
+  transform: scale(1.05);
 }
 
 .about-content {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
   color: #4b5563;
-  background: #ffffff;
-  padding: 48px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .about-content p {
   margin-bottom: 24px;
   font-size: 1.1rem;
   line-height: 1.8;
+  text-align: left;
 }
 
 .contact-grid {
@@ -415,8 +480,17 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .about-content {
-    padding: 32px 24px;
+  .about-wrapper {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-image {
+    height: 300px;
+  }
+
+  .about-content p {
+    text-align: center;
   }
 
   .section {

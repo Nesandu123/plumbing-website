@@ -96,31 +96,37 @@ function ServicesSection() {
       title: "24/7 Emergency Plumbing",
       description:
         "Round-the-clock response for urgent leaks, burst pipes, and blocked drains. We're here when you need us most.",
+      image: "https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       title: "Pipe Installation & Repair",
       description:
         "Expert pipe fitting, replacement, and maintenance services using high-quality materials and modern techniques.",
+      image: "https://images.pexels.com/photos/3587620/pexels-photo-3587620.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       title: "Drain Cleaning & Unblocking",
       description:
         "Professional drain unclogging and cleaning for kitchens, bathrooms, and outdoor drainage systems.",
+      image: "https://images.pexels.com/photos/3873143/pexels-photo-3873143.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       title: "Bathroom & Kitchen Plumbing",
       description:
         "Complete installation and servicing of sinks, taps, toilets, showers, and all fixtures with precision.",
+      image: "https://images.pexels.com/photos/3555611/pexels-photo-3555611.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       title: "Water Heater Services",
       description:
         "Expert repair, replacement, and installation of all types of water heater systems for optimal performance.",
+      image: "https://images.pexels.com/photos/3962662/pexels-photo-3962662.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       title: "Leak Detection & Repair",
       description:
         "Advanced inspection technology to locate hidden leaks and resolve water pressure issues efficiently.",
+      image: "https://images.pexels.com/photos/3554609/pexels-photo-3554609.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
   ];
 
@@ -135,8 +141,13 @@ function ServicesSection() {
         <div className="card-grid">
           {services.map((service, index) => (
             <div className="service-card" key={index}>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
+              <div className="service-image">
+                <img src={service.image} alt={service.title} />
+              </div>
+              <div className="service-content">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -154,21 +165,29 @@ function AboutSection() {
           Your trusted local plumbing experts.
         </p>
 
-        <div className="about-content">
-          <p>
-            At PlumbCare, we are committed to delivering exceptional plumbing services
-            that exceed expectations. With over 15 years of experience serving London and
-            surrounding areas, we've built our reputation on quality workmanship, reliability,
-            and outstanding customer service.
-          </p>
+        <div className="about-wrapper">
+          <div className="about-image">
+            <img
+              src="https://images.pexels.com/photos/3587637/pexels-photo-3587637.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Professional plumber team"
+            />
+          </div>
+          <div className="about-content">
+            <p>
+              At PlumbCare, we are committed to delivering exceptional plumbing services
+              that exceed expectations. With over 15 years of experience serving London and
+              surrounding areas, we've built our reputation on quality workmanship, reliability,
+              and outstanding customer service.
+            </p>
 
-          <p>
-            Our team of fully licensed and insured plumbers specializes in residential and
-            commercial plumbing projects of all sizes. From routine maintenance to complex
-            installations and emergency repairs, we handle every job with precision and care.
-            We believe in transparent pricing, clear communication, and building lasting
-            relationships with our customers.
-          </p>
+            <p>
+              Our team of fully licensed and insured plumbers specializes in residential and
+              commercial plumbing projects of all sizes. From routine maintenance to complex
+              installations and emergency repairs, we handle every job with precision and care.
+              We believe in transparent pricing, clear communication, and building lasting
+              relationships with our customers.
+            </p>
+          </div>
         </div>
       </div>
     </section>
